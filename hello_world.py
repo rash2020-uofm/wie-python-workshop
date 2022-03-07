@@ -33,7 +33,7 @@ print(len(my_dogs))
 # ...
 # print(my_dogs[99])
 
-# The more efficient way is to use a LOOP. There are two different kinds of LOOPS that we will cover
+# The more efficient way is to use a LOOP. There are two different kinds of LOOPS in Python that we will cover
 
 # A FOR LOOP looks like this:
 for number in range(1, 5):
@@ -56,17 +56,35 @@ y_list = [3, 40, 12]
 for index in range(len(x_list)):
     print(x_list[index] + y_list[index])
 
-# A WHILE LOOP has similar behaviour, but is controlled a little differently
+# A WHILE LOOP has similar behaviour, but is controlled a little differently.
+# The lines in a while loop get executed over and over again until the while (STATEMENT) part is no longer true
 countdown = 10
 while countdown > 0:
     print(countdown)
     countdown = countdown - 1
 print("Blast Off!!!!")
 
+# A key difference between FOR and WHILE loops is that a FOR LOOP runs for a pre-determined number of iterations
+# (the index variable gets incremented automatically), whereas a WHILE LOOP could run forever -
+# we're in charge of stopping it by changing the value of the loop variable
 
-# A key difference is that a FOR LOOP runs for a pre-determined number of iterations
-# (the index variable gets incremented automatically)
-# A WHILE LOOP could run forever - we're in charge of stopping it by changing the value of the loop variable
+# -------------------------------------------------------------------- #
+# ------------------------- Coding Challenge ------------------------- #
+# Define three new variables:                                          #
+#   NAME (your name), CITY (where you were born), YEAR (you were born) #
+# Use the PRINT function to display:                                   #
+#   <your name> was born in <city> in <year>                           #
+# -------------------------------------------------------------------- #
+
+# -------------------------------------------------------------------- #
+# ------------------------- Coding Challenge ------------------------- #
+# Predict the value of the DIRECTION variable after the following      #
+# lines are executed:                                                  #
+#   initial = "left"                                                   #
+#   direction = initial                                                #
+#   initial = "right"                                                  #
+# Was your prediction correct? Try it out and see.                     #
+# -------------------------------------------------------------------- #
 
 
 # -------------------------------------------------------------------- #
@@ -116,6 +134,7 @@ d = 1036    # [km]
 t = 9.4  # [h]
 s = compute_speed(d, t)
 print(f"My speed is {s} km/h")
+# Note that our compute_speed function does not take units into consideration - this is left to the user!
 
 
 def say_hello(name, language):
